@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 440" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" width="100%" height="100%">
   <defs>
     <!-- Edgerunners Vibrant Anime Night Sky -->
     <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -6,20 +6,6 @@
       <stop offset="42%" stop-color="#190830" />
       <stop offset="78%" stop-color="#3b0d54" />
       <stop offset="100%" stop-color="#5b1266" />
-    </linearGradient>
-
-    <!-- Glowing Yellow Anime Moon -->
-    <radialGradient id="edgerunnerMoon" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fef08a" />
-      <stop offset="70%" stop-color="#facc15" />
-      <stop offset="100%" stop-color="#eab308" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Horizon Neon Haze -->
-    <linearGradient id="horizonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff007f" stop-opacity="0.35" />
-      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.35" />
-      <stop offset="100%" stop-color="#facc15" stop-opacity="0.35" />
     </linearGradient>
 
     <!-- Bubble Gradients -->
@@ -34,7 +20,7 @@
     </filter>
 
     <filter id="moonBloom" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feGaussianBlur stdDeviation="16" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
@@ -45,15 +31,15 @@
       /* Floating animations for the 3 repository bubbles */
       @keyframes floatBubble1 {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-9px); }
+        50% { transform: translateY(-10px); }
       }
       @keyframes floatBubble2 {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-7px); }
+        50% { transform: translateY(-8px); }
       }
       @keyframes floatBubble3 {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
+        50% { transform: translateY(-11px); }
       }
       @keyframes pulseDot {
         0%, 100% { opacity: 0.45; }
@@ -61,56 +47,47 @@
       }
 
       /* 9 Non-Synchronized Prime-Duration Background Events */
-      /* Event 1: Maglev NCART Neon Train (11s) */
       @keyframes evTrain {
-        0%, 18% { transform: translateX(-280px); }
-        48%, 100% { transform: translateX(1350px); }
+        0%, 18% { transform: translateX(-320px); }
+        48%, 100% { transform: translateX(1300px); }
       }
-      /* Event 2: Trauma Team AV-4 Cruiser (17s) */
       @keyframes evTraumaAV {
-        0%, 28% { transform: translate(1200px, 0px); }
-        65%, 100% { transform: translate(-250px, -25px); }
+        0%, 28% { transform: translate(1150px, 0px); }
+        65%, 100% { transform: translate(-250px, -28px); }
       }
-      /* Event 3: NCPD Spinner with flashing siren (23s) */
       @keyframes evSpinner {
         0%, 40% { transform: translate(-180px, 0px); }
-        72%, 100% { transform: translate(1250px, 15px); }
+        72%, 100% { transform: translate(1200px, 18px); }
       }
-      /* Event 4: Arasaka Laser Searchlight 1 (13s) */
       @keyframes evSearchlight1 {
         0%, 100% { transform: rotate(-22deg); opacity: 0.18; }
         50% { transform: rotate(18deg); opacity: 0.45; }
       }
-      /* Event 5: Megabuilding Laser Searchlight 2 (19s) */
       @keyframes evSearchlight2 {
         0%, 100% { transform: rotate(24deg); opacity: 0.4; }
         50% { transform: rotate(-16deg); opacity: 0.15; }
       }
-      /* Event 6: Giant Holographic Advertising Blimp (31s) */
       @keyframes evBlimp {
-        0% { transform: translateX(1180px); }
+        0% { transform: translateX(1120px); }
         100% { transform: translateX(-320px); }
       }
-      /* Event 7: Sandevistan Emerald/Cyan Rooftop Dash (14s) */
       @keyframes evSandevistan {
         0%, 74% { transform: translateX(-200px); opacity: 0; }
         76% { opacity: 0.95; }
-        84% { transform: translateX(1250px); opacity: 0.95; }
-        86%, 100% { transform: translateX(1250px); opacity: 0; }
+        84% { transform: translateX(1200px); opacity: 0.95; }
+        86%, 100% { transform: translateX(1200px); opacity: 0; }
       }
-      /* Event 8: Orbital Satellite / Shooting Meteor (29s) */
       @keyframes evMeteor {
         0%, 55% { transform: translate(0px, 0px); opacity: 0; }
         57% { opacity: 1; }
-        67% { transform: translate(-650px, 190px); opacity: 0; }
-        100% { transform: translate(-650px, 190px); opacity: 0; }
+        67% { transform: translate(-650px, 210px); opacity: 0; }
+        100% { transform: translate(-650px, 210px); opacity: 0; }
       }
-      /* Event 9: Lunar Orbital Shuttle rising past the Moon (37s) */
       @keyframes evLunarShuttle {
-        0%, 30% { transform: translate(0px, 40px); opacity: 0; }
+        0%, 30% { transform: translate(0px, 45px); opacity: 0; }
         40% { opacity: 0.9; }
-        75% { transform: translate(-90px, -130px); opacity: 0; }
-        100% { transform: translate(-90px, -130px); opacity: 0; }
+        75% { transform: translate(-95px, -140px); opacity: 0; }
+        100% { transform: translate(-95px, -140px); opacity: 0; }
       }
 
       .b1 { animation: floatBubble1 4.2s ease-in-out infinite; }
@@ -121,8 +98,8 @@
       .act-train { animation: evTrain 11s linear infinite; }
       .act-av { animation: evTraumaAV 17s linear infinite; }
       .act-spinner { animation: evSpinner 23s linear infinite; }
-      .act-beam1 { animation: evSearchlight1 13s ease-in-out infinite; transform-origin: 340px 340px; }
-      .act-beam2 { animation: evSearchlight2 19s ease-in-out infinite; transform-origin: 760px 340px; }
+      .act-beam1 { animation: evSearchlight1 13s ease-in-out infinite; transform-origin: 310px 510px; }
+      .act-beam2 { animation: evSearchlight2 19s ease-in-out infinite; transform-origin: 720px 510px; }
       .act-blimp { animation: evBlimp 31s linear infinite; }
       .act-sandy { animation: evSandevistan 14s ease-out infinite; }
       .act-meteor { animation: evMeteor 29s linear infinite; }
@@ -130,183 +107,174 @@
     </style>
   </defs>
 
-  <!-- 1. SKY CANVAS -->
-  <rect width="1100" height="440" rx="22" fill="url(#nightSky)" stroke="#facc15" stroke-width="2" />
+  <!-- 1. ENLARGED SKY CANVAS (No bottom black text bar) -->
+  <rect width="1000" height="540" rx="24" fill="url(#nightSky)" stroke="#facc15" stroke-width="2.5" />
 
   <!-- Starfield -->
   <g fill="#ffffff" opacity="0.65">
-    <circle cx="90" cy="42" r="1.2" /><circle cx="210" cy="68" r="1.5" /><circle cx="340" cy="30" r="1" />
-    <circle cx="480" cy="54" r="1.4" /><circle cx="590" cy="28" r="1.2" /><circle cx="715" cy="62" r="1.6" />
-    <circle cx="150" cy="120" r="1" /><circle cx="420" cy="95" r="1.3" /><circle cx="660" cy="105" r="1.1" />
-    <circle cx="1020" cy="48" r="1.5" /><circle cx="980" cy="135" r="1.2" />
+    <circle cx="85" cy="48" r="1.4" /><circle cx="205" cy="76" r="1.7" /><circle cx="330" cy="36" r="1.2" />
+    <circle cx="460" cy="64" r="1.5" /><circle cx="575" cy="34" r="1.4" /><circle cx="690" cy="72" r="1.8" />
+    <circle cx="145" cy="140" r="1.2" /><circle cx="405" cy="112" r="1.5" /><circle cx="635" cy="122" r="1.3" />
+    <circle cx="945" cy="56" r="1.7" /><circle cx="910" cy="165" r="1.4" />
   </g>
 
   <!-- 2. GIANT EDGERUNNERS YELLOW MOON (Top Right) -->
-  <circle cx="885" cy="112" r="64" fill="#fde047" filter="url(#moonBloom)" opacity="0.85" />
-  <circle cx="885" cy="112" r="54" fill="#fef08a" />
+  <circle cx="825" cy="135" r="78" fill="#fde047" filter="url(#moonBloom)" opacity="0.85" />
+  <circle cx="825" cy="135" r="66" fill="#fef08a" />
 
   <!-- EVENT 9: Lunar Orbital Shuttle rising across the Moon -->
   <g class="act-shuttle">
-    <polygon points="910,130 918,122 914,136" fill="#00f2fe" filter="url(#neonGlow)" />
-    <line x1="914" y1="136" x2="932" y2="162" stroke="#facc15" stroke-width="2" stroke-dasharray="3 3" />
+    <polygon points="850,155 860,145 855,162" fill="#00f2fe" filter="url(#neonGlow)" />
+    <line x1="855" y1="162" x2="876" y2="194" stroke="#facc15" stroke-width="2.2" stroke-dasharray="3 3" />
   </g>
 
   <!-- EVENT 8: Orbital Meteor / Satellite Streak -->
   <g class="act-meteor">
-    <line x1="950" y1="25" x2="1025" y2="0" stroke="#00f2fe" stroke-width="2.5" filter="url(#neonGlow)" />
-    <circle cx="950" cy="25" r="3.5" fill="#ffffff" />
+    <line x1="890" y1="30" x2="975" y2="0" stroke="#00f2fe" stroke-width="3" filter="url(#neonGlow)" />
+    <circle cx="890" cy="30" r="4" fill="#ffffff" />
   </g>
 
   <!-- EVENT 4 & 5: Arasaka Megabuilding Laser Searchlights -->
-  <polygon points="340,340 210,0 295,0" fill="#00f2fe" class="act-beam1" />
-  <polygon points="760,340 820,0 905,0" fill="#ff007f" class="act-beam2" />
+  <polygon points="310,510 170,0 265,0" fill="#00f2fe" class="act-beam1" />
+  <polygon points="720,510 760,0 855,0" fill="#ff007f" class="act-beam2" />
 
-  <!-- 3. NIGHT CITY MEGABUILDING SKYLINE -->
+  <!-- 3. NIGHT CITY MEGABUILDING SKYLINE (Extended to bottom of scene) -->
   <g>
-    <!-- Far Layer Silhouette -->
-    <rect x="30" y="190" width="75" height="200" fill="#0d041a" />
-    <rect x="120" y="155" width="92" height="235" fill="#120624" />
-    <rect x="225" y="205" width="68" height="185" fill="#0d041a" />
-    <rect x="310" y="125" width="115" height="265" fill="#140729" />
-    <rect x="440" y="185" width="85" height="205" fill="#0f051f" />
-    <rect x="540" y="140" width="102" height="250" fill="#16082e" />
-    <rect x="658" y="175" width="88" height="215" fill="#110622" />
-    <rect x="762" y="160" width="94" height="230" fill="#15072b" />
-    <rect x="935" y="150" width="120" height="240" fill="#110521" />
+    <rect x="25" y="250" width="75" height="290" fill="#0d041a" />
+    <rect x="112" y="205" width="90" height="335" fill="#120624" />
+    <rect x="214" y="265" width="66" height="275" fill="#0d041a" />
+    <rect x="292" y="165" width="112" height="375" fill="#140729" />
+    <rect x="416" y="240" width="84" height="300" fill="#0f051f" />
+    <rect x="512" y="185" width="98" height="355" fill="#16082e" />
+    <rect x="622" y="228" width="86" height="312" fill="#110622" />
+    <rect x="720" y="210" width="92" height="330" fill="#15072b" />
+    <rect x="826" y="245" width="64" height="295" fill="#0e041d" />
+    <rect x="900" y="195" width="85" height="345" fill="#110521" />
 
     <!-- Bright Neon Building Trim Lines -->
-    <rect x="128" y="165" width="3" height="180" fill="#00f2fe" filter="url(#neonGlow)" />
-    <rect x="320" y="135" width="4" height="210" fill="#ff007f" filter="url(#neonGlow)" />
-    <rect x="412" y="135" width="3" height="210" fill="#facc15" />
-    <rect x="552" y="150" width="3.5" height="195" fill="#00f2fe" filter="url(#neonGlow)" />
-    <rect x="774" y="170" width="3" height="175" fill="#ff007f" filter="url(#neonGlow)" />
-    <rect x="948" y="162" width="4" height="190" fill="#facc15" filter="url(#neonGlow)" />
+    <rect x="120" y="218" width="3.5" height="290" fill="#00f2fe" filter="url(#neonGlow)" />
+    <rect x="302" y="178" width="4" height="330" fill="#ff007f" filter="url(#neonGlow)" />
+    <rect x="392" y="178" width="3.5" height="330" fill="#facc15" />
+    <rect x="524" y="198" width="4" height="310" fill="#00f2fe" filter="url(#neonGlow)" />
+    <rect x="732" y="222" width="3.5" height="285" fill="#ff007f" filter="url(#neonGlow)" />
+    <rect x="912" y="208" width="4" height="300" fill="#facc15" filter="url(#neonGlow)" />
 
     <!-- Glowing Cyberpunk Windows -->
     <g fill="#facc15" opacity="0.85">
-      <rect x="145" y="180" width="8" height="10" /><rect x="165" y="180" width="8" height="10" />
-      <rect x="145" y="205" width="8" height="10" /><rect x="185" y="205" width="8" height="10" />
-      <rect x="340" y="155" width="10" height="12" /><rect x="365" y="155" width="10" height="12" />
-      <rect x="340" y="185" width="10" height="12" /><rect x="390" y="185" width="10" height="12" />
-      <rect x="575" y="170" width="9" height="10" /><rect x="605" y="170" width="9" height="10" />
-      <rect x="575" y="200" width="9" height="10" /><rect x="605" y="225" width="9" height="10" />
-      <rect x="970" y="180" width="10" height="12" /><rect x="995" y="180" width="10" height="12" />
-      <rect x="970" y="210" width="10" height="12" /><rect x="1020" y="210" width="10" height="12" />
+      <rect x="138" y="235" width="9" height="12" /><rect x="160" y="235" width="9" height="12" />
+      <rect x="138" y="268" width="9" height="12" /><rect x="180" y="268" width="9" height="12" />
+      <rect x="322" y="200" width="11" height="14" /><rect x="348" y="200" width="11" height="14" />
+      <rect x="322" y="236" width="11" height="14" /><rect x="372" y="236" width="11" height="14" />
+      <rect x="546" y="220" width="10" height="12" /><rect x="576" y="220" width="10" height="12" />
+      <rect x="546" y="256" width="10" height="12" /><rect x="576" y="288" width="10" height="12" />
+      <rect x="932" y="230" width="11" height="14" /><rect x="958" y="230" width="11" height="14" />
+      <rect x="932" y="266" width="11" height="14" /><rect x="958" y="302" width="11" height="14" />
     </g>
   </g>
 
   <!-- EVENT 6: Advertising Blimp Drifting Across Night City -->
   <g class="act-blimp">
-    <ellipse cx="0" cy="92" rx="46" ry="16" fill="#1e0b36" stroke="#ff007f" stroke-width="1.8" filter="url(#neonGlow)" />
-    <text x="0" y="96" fill="#fde047" class="mono" font-size="9" font-weight="bold" text-anchor="middle">NIGHT CITY</text>
-    <circle cx="-48" cy="92" r="3" fill="#00f2fe" />
+    <ellipse cx="0" cy="115" rx="52" ry="18" fill="#1e0b36" stroke="#ff007f" stroke-width="2" filter="url(#neonGlow)" />
+    <text x="0" y="119" fill="#fde047" class="mono" font-size="10" font-weight="bold" text-anchor="middle">NIGHT CITY</text>
+    <circle cx="-54" cy="115" r="3.5" fill="#00f2fe" />
   </g>
 
   <!-- EVENT 2: Trauma Team AV-4 Flying Cruiser -->
   <g class="act-av">
-    <polygon points="0,140 48,136 58,148 8,148" fill="#f8fafc" stroke="#00f2fe" stroke-width="1.5" />
-    <rect x="14" y="140" width="18" height="5" fill="#ef4444" />
-    <circle cx="4" cy="148" r="4" fill="#00f2fe" filter="url(#neonGlow)" />
-    <circle cx="46" cy="148" r="4" fill="#00f2fe" filter="url(#neonGlow)" />
+    <polygon points="0,175 54,170 66,184 10,184" fill="#f8fafc" stroke="#00f2fe" stroke-width="1.5" />
+    <rect x="16" y="175" width="20" height="6" fill="#ef4444" />
+    <circle cx="5" cy="184" r="4.5" fill="#00f2fe" filter="url(#neonGlow)" />
+    <circle cx="52" cy="184" r="4.5" fill="#00f2fe" filter="url(#neonGlow)" />
   </g>
 
   <!-- EVENT 3: NCPD Flying Spinner Car with Flashing Red/Blue Siren -->
   <g class="act-spinner">
-    <rect x="0" y="175" width="38" height="9" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" />
-    <circle cx="12" cy="173" r="3.5" fill="#ef4444" class="dot" filter="url(#neonGlow)" />
-    <circle cx="24" cy="173" r="3.5" fill="#00f2fe" filter="url(#neonGlow)" />
-    <line x1="-28" y1="180" x2="0" y2="180" stroke="#00f2fe" stroke-width="2" />
+    <rect x="0" y="220" width="44" height="11" rx="5" fill="#0f172a" stroke="#38bdf8" stroke-width="1.4" />
+    <circle cx="14" cy="218" r="4" fill="#ef4444" class="dot" filter="url(#neonGlow)" />
+    <circle cx="28" cy="218" r="4" fill="#00f2fe" filter="url(#neonGlow)" />
+    <line x1="-34" y1="226" x2="0" y2="226" stroke="#00f2fe" stroke-width="2.5" />
   </g>
 
-  <!-- 4. ELEVATED NCART MAGLEV BRIDGE & MOVING NEON TRAIN -->
-  <rect x="0" y="348" width="1100" height="12" fill="#090314" />
-  <line x1="0" y1="348" x2="1100" y2="348" stroke="#00f2fe" stroke-width="2" filter="url(#neonGlow)" />
+  <!-- 4. ELEVATED NCART MAGLEV BRIDGE & MOVING NEON TRAIN (At bottom edge) -->
+  <rect x="0" y="514" width="1000" height="26" fill="#090314" />
+  <line x1="0" y1="514" x2="1000" y2="514" stroke="#00f2fe" stroke-width="2.5" filter="url(#neonGlow)" />
 
   <!-- EVENT 1: Speeding Neon Maglev Train -->
   <g class="act-train">
-    <rect x="0" y="334" width="210" height="13" rx="6" fill="#1e1b4b" stroke="#facc15" stroke-width="1.5" />
-    <rect x="12" y="337" width="26" height="6" rx="2" fill="#00f2fe" />
-    <rect x="46" y="337" width="26" height="6" rx="2" fill="#00f2fe" />
-    <rect x="80" y="337" width="26" height="6" rx="2" fill="#00f2fe" />
-    <rect x="114" y="337" width="26" height="6" rx="2" fill="#00f2fe" />
-    <rect x="148" y="337" width="26" height="6" rx="2" fill="#00f2fe" />
-    <line x1="-65" y1="340" x2="0" y2="340" stroke="#ff007f" stroke-width="3" filter="url(#neonGlow)" />
+    <rect x="0" y="496" width="235" height="16" rx="7" fill="#1e1b4b" stroke="#facc15" stroke-width="1.8" />
+    <rect x="14" y="500" width="28" height="7" rx="2" fill="#00f2fe" />
+    <rect x="52" y="500" width="28" height="7" rx="2" fill="#00f2fe" />
+    <rect x="90" y="500" width="28" height="7" rx="2" fill="#00f2fe" />
+    <rect x="128" y="500" width="28" height="7" rx="2" fill="#00f2fe" />
+    <rect x="166" y="500" width="28" height="7" rx="2" fill="#00f2fe" />
+    <line x1="-75" y1="504" x2="0" y2="504" stroke="#ff007f" stroke-width="3.5" filter="url(#neonGlow)" />
   </g>
 
   <!-- EVENT 7: Sandevistan Emerald/Cyan Afterimage Streak -->
   <g class="act-sandy">
-    <rect x="0" y="368" width="120" height="4" fill="#10b981" filter="url(#neonGlow)" />
-    <rect x="35" y="364" width="95" height="4" fill="#00f2fe" filter="url(#neonGlow)" />
-    <rect x="70" y="372" width="85" height="4" fill="#facc15" filter="url(#neonGlow)" />
+    <rect x="0" y="480" width="135" height="4.5" fill="#10b981" filter="url(#neonGlow)" />
+    <rect x="40" y="475" width="105" height="4.5" fill="#00f2fe" filter="url(#neonGlow)" />
+    <rect x="80" y="485" width="95" height="4.5" fill="#facc15" filter="url(#neonGlow)" />
   </g>
-
-  <!-- Foreground Rooftop Deck -->
-  <rect x="0" y="360" width="1100" height="80" fill="#06020e" />
-  <line x1="0" y1="360" x2="1100" y2="360" stroke="#ff007f" stroke-width="2.5" filter="url(#neonGlow)" />
 
   <!-- ===================================================================== -->
   <!-- 5. TOP-LEFT EDGERUNNERS IDENTITY OVERLAY                              -->
   <!-- ===================================================================== -->
   <g>
-    <rect x="42" y="36" width="235" height="24" rx="4" fill="#facc15" />
-    <text x="54" y="52" fill="#05020a" class="mono" font-size="12" font-weight="bold" letter-spacing="1.5">
+    <rect x="44" y="42" width="255" height="28" rx="5" fill="#facc15" />
+    <text x="58" y="61" fill="#05020a" class="mono" font-size="13.5" font-weight="bold" letter-spacing="1.5">
       NIGHT CITY // EDGERUNNER
     </text>
 
-    <text x="42" y="102" fill="#ffffff" class="sans" font-size="42" font-weight="900" letter-spacing="2" filter="url(#neonGlow)">
+    <text x="44" y="122" fill="#ffffff" class="sans" font-size="50" font-weight="900" letter-spacing="2.5" filter="url(#neonGlow)">
       VANSH VERMA
     </text>
-    <text x="44" y="126" fill="#00f2fe" class="mono" font-size="13.5" font-weight="bold" letter-spacing="2.5">
+    <text x="46" y="152" fill="#00f2fe" class="mono" font-size="15" font-weight="bold" letter-spacing="3">
       SYSTEMS • KERNELS • AI ARCHITECTURE
     </text>
 
     <!-- Sleek HUD Telemetry Box -->
-    <rect x="42" y="144" width="295" height="74" rx="8" fill="#090414" fill-opacity="0.86" stroke="#00f2fe" stroke-width="1.5" />
-    <rect x="42" y="144" width="5" height="74" rx="2.5" fill="#facc15" />
-    <text x="58" y="166" fill="#facc15" class="mono" font-size="11" font-weight="bold">⚡ ACTIVE REPOSITORY NODES: 03</text>
-    <text x="58" y="185" fill="#e2e8f0" class="mono" font-size="11">• BareMetalOs · container-engine</text>
-    <text x="58" y="203" fill="#e2e8f0" class="mono" font-size="11">• modular-gpt-engine</text>
+    <rect x="44" y="176" width="325" height="86" rx="10" fill="#090414" fill-opacity="0.88" stroke="#00f2fe" stroke-width="1.8" />
+    <rect x="44" y="176" width="6" height="86" rx="3" fill="#facc15" />
+    <text x="64" y="202" fill="#facc15" class="mono" font-size="12" font-weight="bold">⚡ FEATURED CORE SYSTEMS: 03</text>
+    <text x="64" y="224" fill="#e2e8f0" class="mono" font-size="12">• BareMetalOs · container-engine</text>
+    <text x="64" y="244" fill="#e2e8f0" class="mono" font-size="12">• modular-gpt-engine</text>
   </g>
 
   <!-- ===================================================================== -->
-  <!-- 6. THE 3 FLOATING REPOSITORY BUBBLES (ORIGINAL REPOSITORY NAMES)      -->
+  <!-- 6. THE 3 FLOATING REPOSITORY BUBBLES IN SCENE                         -->
   <!-- ===================================================================== -->
 
   <!-- BUBBLE 1: BareMetalOs -->
   <g class="b1">
-    <rect x="70" y="258" width="280" height="68" rx="34" fill="url(#bubbleDark)" stroke="#00f2fe" stroke-width="2.2" filter="url(#neonGlow)" />
-    <circle cx="106" cy="292" r="22" fill="#0c243c" stroke="#00f2fe" stroke-width="1.5" />
-    <text x="106" y="298" font-size="18" text-anchor="middle">⚙️</text>
+    <rect x="44" y="355" width="285" height="78" rx="39" fill="url(#bubbleDark)" stroke="#00f2fe" stroke-width="2.5" filter="url(#neonGlow)" />
+    <circle cx="86" cy="394" r="25" fill="#0c243c" stroke="#00f2fe" stroke-width="1.8" />
+    <text x="86" y="401" font-size="21" text-anchor="middle">⚙️</text>
 
-    <text x="140" y="287" fill="#ffffff" class="sans" font-size="16" font-weight="800">BareMetalOs</text>
-    <circle cx="146" cy="305" r="4.5" fill="#facc15" class="dot" />
-    <text x="157" y="309" fill="#fde047" class="mono" font-size="10.5" font-weight="bold">IN PROGRESS · ARM64 C</text>
+    <text x="124" y="388" fill="#ffffff" class="sans" font-size="18" font-weight="800">BareMetalOs</text>
+    <circle cx="130" cy="409" r="5" fill="#facc15" class="dot" />
+    <text x="142" y="413" fill="#fde047" class="mono" font-size="11.5" font-weight="bold">IN PROGRESS · ARM64 C</text>
   </g>
 
   <!-- BUBBLE 2: container-engine -->
   <g class="b2">
-    <rect x="410" y="242" width="285" height="68" rx="34" fill="url(#bubbleDark)" stroke="#facc15" stroke-width="2.2" filter="url(#neonGlow)" />
-    <circle cx="446" cy="276" r="22" fill="#2e2105" stroke="#facc15" stroke-width="1.5" />
-    <text x="446" y="282" font-size="18" text-anchor="middle">🐳</text>
+    <rect x="356" y="335" width="290" height="78" rx="39" fill="url(#bubbleDark)" stroke="#facc15" stroke-width="2.5" filter="url(#neonGlow)" />
+    <circle cx="398" cy="374" r="25" fill="#2e2105" stroke="#facc15" stroke-width="1.8" />
+    <text x="398" y="381" font-size="21" text-anchor="middle">🐳</text>
 
-    <text x="480" y="271" fill="#ffffff" class="sans" font-size="16" font-weight="800">container-engine</text>
-    <circle cx="486" cy="289" r="4.5" fill="#facc15" class="dot" />
-    <text x="497" y="293" fill="#fde047" class="mono" font-size="10.5" font-weight="bold">IN PROGRESS · GOLANG</text>
+    <text x="436" y="368" fill="#ffffff" class="sans" font-size="18" font-weight="800">container-engine</text>
+    <circle cx="442" cy="389" r="5" fill="#facc15" class="dot" />
+    <text x="454" y="393" fill="#fde047" class="mono" font-size="11.5" font-weight="bold">IN PROGRESS · GOLANG</text>
   </g>
 
   <!-- BUBBLE 3: modular-gpt-engine -->
   <g class="b3">
-    <rect x="750" y="258" width="290" height="68" rx="34" fill="url(#bubbleDark)" stroke="#ff007f" stroke-width="2.2" filter="url(#neonGlow)" />
-    <circle cx="786" cy="292" r="22" fill="#3b0728" stroke="#ff007f" stroke-width="1.5" />
-    <text x="786" y="298" font-size="18" text-anchor="middle">🧠</text>
+    <rect x="670" y="355" width="290" height="78" rx="39" fill="url(#bubbleDark)" stroke="#ff007f" stroke-width="2.5" filter="url(#neonGlow)" />
+    <circle cx="712" cy="394" r="25" fill="#3b0728" stroke="#ff007f" stroke-width="1.8" />
+    <text x="712" y="401" font-size="21" text-anchor="middle">🧠</text>
 
-    <text x="820" y="287" fill="#ffffff" class="sans" font-size="16" font-weight="800">modular-gpt-engine</text>
-    <circle cx="826" cy="305" r="4.5" fill="#facc15" class="dot" />
-    <text x="837" y="309" fill="#fde047" class="mono" font-size="10.5" font-weight="bold">IN PROGRESS · PYTHON</text>
+    <text x="750" y="388" fill="#ffffff" class="sans" font-size="18" font-weight="800">modular-gpt-engine</text>
+    <circle cx="756" cy="409" r="5" fill="#facc15" class="dot" />
+    <text x="768" y="413" fill="#fde047" class="mono" font-size="11.5" font-weight="bold">IN PROGRESS · PYTHON</text>
   </g>
-
-  <!-- Bottom Instruction Prompt on Rooftop -->
-  <text x="550" y="405" fill="#facc15" class="mono" font-size="12.5" font-weight="bold" text-anchor="middle" letter-spacing="1.5">
-    ▼ CLICK ANY REPOSITORY BUBBLE BELOW TO EXPAND SPECS &amp; LAUNCH REPO ▼
-  </text>
 </svg>
