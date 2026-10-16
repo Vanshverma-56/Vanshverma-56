@@ -1,21 +1,44 @@
 <div align="center">
 
 <!-- ========================================================================================= -->
-<!-- CYBERPUNK 2077: EDGERUNNERS — ENLARGED DYNAMIC NIGHT CITY SCENE (3 FEATURED REPOS)        -->
+<!-- STUDY HABITAT // VANSH VERMA // ANIMATED LIVING WORKSPACE (DAY/NIGHT & DYNAMIC LAPTOP)    -->
 <!-- ========================================================================================= -->
 <a href="https://github.com/Vanshverma-56?tab=repositories">
-  <img src="./assets/edgerunners-hero.svg" width="100%" alt="Vansh Verma — Cyberpunk Edgerunners Night City Scene" />
+  <img src="./assets/study-habitat-animated.svg" width="100%" alt="Vansh Verma — Study Habitat Animated Workspace" />
 </a>
 
-<br/><br/>
+</div>
 
-<sub>Click any repository card below to view its core purpose, tech stack, completion status, and redirect directly to the repository.</sub>
+<br/>
 
-<br/><br/>
+<!-- ========================================================================================= -->
+<!-- ABOUT ME SECTION                                                                          -->
+<!-- ========================================================================================= -->
+## 👨‍💻 About Me
+
+```yaml
+Name        : Vansh Verma
+Title       : Systems, Kernels & AI Architecture Engineer
+Focus Areas : Low-Level Micro-Kernels, Container Runtimes, Custom LLMs, Native Android
+Toolchain   : C, ARM64 Assembly, Go, Python, Kotlin, TypeScript, PyTorch, Linux
+Status      : Building robust low-level architectures & agentic AI protocols
+```
+
+> Hello! I'm **Vansh Verma**, an engineer deeply passionate about exploring the entire computing stack—from bare-metal **ARM64 OS kernels** and **Docker-free container engines** to custom **Transformer attention models** and **native Android AI applications**. 
+>
+> When I build, I focus on clean systems programming, high-performance execution, and expressive, reactive user interfaces. Feel free to explore my repositories below to dive into the code, architecture decisions, and active pipelines!
+
+<br/>
+
+---
+
+<br/>
 
 <!-- ========================================================================================= -->
 <!-- 6 SQUARE REPOSITORY CARDS (2 PER ROW) — DIRECT REDIRECT ON CLICK                          -->
 <!-- ========================================================================================= -->
+<div align="center">
+
 <table>
   <tr>
     <td width="50%" align="center">
