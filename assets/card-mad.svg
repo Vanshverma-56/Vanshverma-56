@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051311" />
+      <stop offset="50%" stop-color="#071c18" />
+      <stop offset="100%" stop-color="#040c0e" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#6ee7b7" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b" />
+      <feComposite in="SourceGraphic" in2="b" operator="over" />
+    </filter>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+      .sans { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+      @keyframes pulse { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
+      @keyframes sweep { 0% { transform: translateX(-180px); } 100% { transform: translateX(560px); } }
+      .pulse-dot { animation: pulse 2s ease-in-out infinite; }
+      .shimmer { animation: sweep 3.8s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Outer Cyber Card Frame -->
+  <rect x="4" y="4" width="532" height="222" rx="16" fill="url(#cardBg)" stroke="#10b981" stroke-width="2" />
+  <rect x="4" y="4" width="8" height="222" rx="4" fill="url(#emeraldGrad)" filter="url(#glow)" />
+
+  <!-- Top Header Strip -->
+  <text x="26" y="32" fill="#34d399" class="mono" font-size="11" font-weight="bold">MODULE 01 // MOBILE AI &amp; JETPACK COMPOSE</text>
+
+  <!-- Status Pill: COMPLETED -->
+  <rect x="364" y="16" width="154" height="24" rx="12" fill="#064e3b" stroke="#10b981" stroke-width="1.2" filter="url(#glow)" />
+  <circle cx="380" cy="28" r="4.5" fill="#34d399" class="pulse-dot" />
+  <text x="392" y="32" fill="#ecfdf5" class="mono" font-size="10.5" font-weight="bold">✔ COMPLETED 100%</text>
+
+  <!-- Repo Title -->
+  <text x="26" y="66" fill="#ffffff" class="sans" font-size="21" font-weight="bold">N115_VanshV_Assignment1</text>
+  <text x="26" y="86" fill="#6ee7b7" class="mono" font-size="12" font-weight="bold">★ MAD Assignment (Mobile Application Development)</text>
+
+  <!-- Description -->
+  <text x="26" y="112" fill="#cbd5e1" class="sans" font-size="12.5">Android native generative AI application engineered with Kotlin,</text>
+  <text x="26" y="130" fill="#cbd5e1" class="sans" font-size="12.5">declarative Jetpack Compose UI, and Google Gemini API integration.</text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(26, 146)">
+    <rect x="0" y="0" width="68" height="22" rx="6" fill="#0f172a" stroke="#a855f7" stroke-width="1" />
+    <text x="34" y="15" fill="#e9d5ff" class="mono" font-size="10.5" font-weight="bold" text-anchor="middle">Kotlin</text>
+
+    <rect x="78" y="0" width="124" height="22" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <text x="140" y="15" fill="#a7f3d0" class="mono" font-size="10.5" font-weight="bold" text-anchor="middle">Jetpack Compose</text>
+
+    <rect x="212" y="0" width="96" height="22" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <text x="260" y="15" fill="#bae6fd" class="mono" font-size="10.5" font-weight="bold" text-anchor="middle">Gemini API</text>
+
+    <rect x="318" y="0" width="84" height="22" rx="6" fill="#0f172a" stroke="#34d399" stroke-width="1" />
+    <text x="360" y="15" fill="#d1fae5" class="mono" font-size="10.5" font-weight="bold" text-anchor="middle">Android</text>
+  </g>
+
+  <!-- Bottom Progress & Action Bar -->
+  <rect x="26" y="184" width="320" height="8" rx="4" fill="#0f172a" />
+  <rect x="26" y="184" width="320" height="8" rx="4" fill="url(#emeraldGrad)" filter="url(#glow)" />
+  <text x="26" y="208" fill="#6ee7b7" class="mono" font-size="10.5" font-weight="bold">BUILD VERIFIED • PRODUCTION READY [100%]</text>
+
+  <!-- Launch Button Graphic -->
+  <rect x="368" y="178" width="150" height="32" rx="8" fill="#10b981" filter="url(#glow)" />
+  <text x="443" y="198" fill="#022c22" class="mono" font-size="11.5" font-weight="bold" text-anchor="middle">LAUNCH REPO ↗</text>
+
+  <!-- Top Laser Shimmer -->
+  <rect x="0" y="4" width="120" height="2.5" fill="#6ee7b7" class="shimmer" />
+</svg>

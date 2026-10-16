@@ -1,69 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 135" width="100%" height="100%">
   <defs>
-    <linearGradient id="barBg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#090d16" />
-      <stop offset="50%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#090d16" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0a1122" />
+      <stop offset="100%" stop-color="#050811" />
     </linearGradient>
-    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="cyanBar" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="100%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="emeraldBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="amberBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#fde047" />
     </linearGradient>
     <style>
-      .mono { font-family: 'Courier New', Consolas, monospace; }
-      .sans { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
-      @keyframes pulseBar {
-        0%, 100% { opacity: 0.7; }
-        50% { opacity: 1; }
-      }
-      @keyframes slideGlow {
-        0% { transform: translateX(-150px); }
-        100% { transform: translateX(950px); }
-      }
-      .pulse { animation: pulseBar 2.5s ease-in-out infinite; }
-      .scanner { animation: slideGlow 5s linear infinite; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+      .sans { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+      @keyframes pulse { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
+      @keyframes scan { 0% { transform: translateX(-200px); } 100% { transform: translateX(1150px); } }
+      .pulse { animation: pulse 2.2s ease-in-out infinite; }
+      .scanner { animation: scan 4.8s linear infinite; }
     </style>
   </defs>
 
-  <rect width="900" height="120" rx="14" fill="url(#barBg)" stroke="#1e293b" stroke-width="2" />
-  <rect x="-100" y="0" width="120" height="3" fill="url(#cyanGlow)" class="scanner" />
+  <rect width="1100" height="135" rx="16" fill="url(#bg)" stroke="#1e293b" stroke-width="2" />
+  <rect x="-120" y="0" width="160" height="3" fill="url(#cyanBar)" class="scanner" />
 
-  <!-- Stat Card 1: Total Repositories -->
-  <g transform="translate(25, 18)">
-    <rect width="200" height="84" rx="10" fill="#060913" stroke="#38bdf8" stroke-width="1.2" />
-    <text x="20" y="28" fill="#64748b" class="mono" font-size="10" font-weight="bold">TOTAL REPOSITORIES</text>
-    <text x="20" y="60" fill="#f8fafc" class="sans" font-size="28" font-weight="bold">06</text>
-    <text x="72" y="56" fill="#38bdf8" class="mono" font-size="11">PUBLIC MODULES</text>
-    <rect x="20" y="70" width="160" height="4" rx="2" fill="#00f2fe" class="pulse" />
+  <!-- Box 1: Engineering Focus -->
+  <g transform="translate(22, 18)">
+    <rect width="250" height="99" rx="12" fill="#060b16" stroke="#00f2fe" stroke-width="1.4" />
+    <text x="18" y="26" fill="#38bdf8" class="mono" font-size="10.5" font-weight="bold">⚡ CORE SPECIALIZATION</text>
+    <text x="18" y="52" fill="#ffffff" class="sans" font-size="16" font-weight="bold">Systems &amp; AI Architect</text>
+    <text x="18" y="71" fill="#94a3b8" class="mono" font-size="10.5">OS Kernels • LLMs • Runtimes</text>
+    <rect x="18" y="83" width="214" height="5" rx="2.5" fill="url(#cyanBar)" class="pulse" />
   </g>
 
-  <!-- Stat Card 2: Completed (MAD Assignment) -->
-  <g transform="translate(242, 18)">
-    <rect width="200" height="84" rx="10" fill="#060913" stroke="#10b981" stroke-width="1.5" />
-    <text x="20" y="28" fill="#10b981" class="mono" font-size="10" font-weight="bold">● COMPLETED STATUS</text>
-    <text x="20" y="60" fill="#10b981" class="sans" font-size="28" font-weight="bold">01</text>
-    <text x="68" y="50" fill="#e2e8f0" class="sans" font-size="11" font-weight="bold">MAD Assignment</text>
-    <text x="68" y="64" fill="#94a3b8" class="mono" font-size="9.5">N115_VanshV_Assignment1</text>
-    <rect x="20" y="70" width="160" height="4" rx="2" fill="#10b981" />
+  <!-- Box 2: Completed Deliverable -->
+  <g transform="translate(290, 18)">
+    <rect width="250" height="99" rx="12" fill="#051412" stroke="#10b981" stroke-width="1.8" />
+    <text x="18" y="26" fill="#34d399" class="mono" font-size="10.5" font-weight="bold">✔ COMPLETED DELIVERABLE</text>
+    <text x="18" y="56" fill="#10b981" class="sans" font-size="28" font-weight="bold">01</text>
+    <text x="64" y="48" fill="#ffffff" class="sans" font-size="13.5" font-weight="bold">MAD Assignment</text>
+    <text x="64" y="66" fill="#6ee7b7" class="mono" font-size="10">N115_VanshV_Assignment1</text>
+    <rect x="18" y="83" width="214" height="5" rx="2.5" fill="url(#emeraldBar)" />
   </g>
 
-  <!-- Stat Card 3: In Progress -->
-  <g transform="translate(458, 18)">
-    <rect width="200" height="84" rx="10" fill="#060913" stroke="#f59e0b" stroke-width="1.5" />
-    <text x="20" y="28" fill="#fbbf24" class="mono" font-size="10" font-weight="bold">⚡ IN PROGRESS</text>
-    <text x="20" y="60" fill="#fbbf24" class="sans" font-size="28" font-weight="bold">05</text>
-    <text x="68" y="50" fill="#e2e8f0" class="sans" font-size="11" font-weight="bold">Active R&amp;D Builds</text>
-    <text x="68" y="64" fill="#94a3b8" class="mono" font-size="9.5">OS, AI, Containers, MCP</text>
-    <rect x="20" y="70" width="160" height="4" rx="2" fill="#1e293b" />
-    <rect x="20" y="70" width="120" height="4" rx="2" fill="#f59e0b" class="pulse" />
+  <!-- Box 3: Active R&D Pipelines -->
+  <g transform="translate(558, 18)">
+    <rect width="250" height="99" rx="12" fill="#120d06" stroke="#f59e0b" stroke-width="1.6" />
+    <text x="18" y="26" fill="#fbbf24" class="mono" font-size="10.5" font-weight="bold">⚙ IN-PROGRESS R&amp;D REPOS</text>
+    <text x="18" y="56" fill="#fbbf24" class="sans" font-size="28" font-weight="bold">05</text>
+    <text x="64" y="48" fill="#ffffff" class="sans" font-size="13.5" font-weight="bold">Active Deep-Tech Builds</text>
+    <text x="64" y="66" fill="#fde68a" class="mono" font-size="10">OS • Container • GPT • MCP • 3D</text>
+    <rect x="18" y="83" width="214" height="5" rx="2.5" fill="#1e293b" />
+    <rect x="18" y="83" width="168" height="5" rx="2.5" fill="url(#amberBar)" class="pulse" />
   </g>
 
-  <!-- Stat Card 4: Core Stack -->
-  <g transform="translate(675, 18)">
-    <rect width="200" height="84" rx="10" fill="#060913" stroke="#a855f7" stroke-width="1.2" />
-    <text x="20" y="28" fill="#c084fc" class="mono" font-size="10" font-weight="bold">CORE LANGUAGES</text>
-    <text x="20" y="52" fill="#f8fafc" class="sans" font-size="13" font-weight="bold">Kotlin • C • Go</text>
-    <text x="20" y="68" fill="#94a3b8" class="sans" font-size="12" font-weight="bold">Python • TypeScript</text>
-    <rect x="20" y="74" width="160" height="4" rx="2" fill="#a855f7" class="pulse" />
+  <!-- Box 4: Polyglot Arsenal -->
+  <g transform="translate(826, 18)">
+    <rect width="252" height="99" rx="12" fill="#0b0818" stroke="#a855f7" stroke-width="1.4" />
+    <text x="18" y="26" fill="#c084fc" class="mono" font-size="10.5" font-weight="bold">🛠️ PRIMARY LANGUAGES</text>
+    <text x="18" y="50" fill="#ffffff" class="sans" font-size="14" font-weight="bold">C • Go • Python • Kotlin</text>
+    <text x="18" y="69" fill="#d8b4fe" class="mono" font-size="11">TypeScript • ARM64 • Linux</text>
+    <rect x="18" y="83" width="216" height="5" rx="2.5" fill="#a855f7" class="pulse" />
   </g>
 </svg>

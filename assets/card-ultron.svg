@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140613" />
+      <stop offset="50%" stop-color="#1f0a1d" />
+      <stop offset="100%" stop-color="#0b040b" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fde047" />
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b" />
+      <feComposite in="SourceGraphic" in2="b" operator="over" />
+    </filter>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+      .sans { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+      @keyframes pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+      @keyframes sweep { 0% { transform: translateX(-180px); } 100% { transform: translateX(560px); } }
+      .pulse-dot { animation: pulse 2.0s ease-in-out infinite; }
+      .shimmer { animation: sweep 3.9s linear infinite; }
+    </style>
+  </defs>
+
+  <rect x="4" y="4" width="532" height="222" rx="16" fill="url(#cardBg)" stroke="#ec4899" stroke-width="1.8" />
+  <rect x="4" y="4" width="8" height="222" rx="4" fill="url(#pinkGrad)" filter="url(#glow)" />
+
+  <text x="26" y="32" fill="#f472b6" class="mono" font-size="11" font-weight="bold">MODULE 06 // 3D WEBGL &amp; VOICE AI INTERFACE</text>
+
+  <rect x="364" y="16" width="154" height="24" rx="12" fill="#451a03" stroke="#f59e0b" stroke-width="1.2" />
+  <circle cx="380" cy="28" r="4.5" fill="#fbbf24" class="pulse-dot" />
+  <text x="392" y="32" fill="#fef3c7" class="mono" font-size="10.5" font-weight="bold">⚡ IN PROGRESS</text>
+
+  <text x="26" y="66" fill="#ffffff" class="sans" font-size="21" font-weight="bold">ultron-hive-core</text>
+  <text x="26" y="86" fill="#fbcfe8" class="mono" font-size="12" font-weight="bold">3D Audio-Reactive Ultron AI HUD</text>
+
+  <text x="26" y="112" fill="#cbd5e1" class="sans" font-size="12.5">Interactive 3D Ultron-themed AI interface engineered with Next.js,</text>
+  <text x="26" y="130" fill="#cbd5e1" class="sans" font-size="12.5">Three.js &amp; Web Speech API featuring audio-reactive core lighting.</text>
+
+  <g transform="translate(26, 146)">
+    <rect x="0" y="0" width="94" height="22" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <text x="47" y="15" fill="#bae6fd" class="mono" font-size="10.5" font-weight="bold" text-anchor="middle">TypeScript</text>
+
+    <rect x="104" y="0" width="78" height="22" rx="6" fill="#0f172a" stroke="#ec4899" stroke-width="1" />
+    <text x="143" y="15" fill="#fbcfe8" class="mono" font-size="10.5" font-weight="bold" text-anchor="middle">Three.js</text>
+
+    <rect x="192" y="0" width="76" height="22" rx="6" fill="#0f172a" stroke="#a855f7" stroke-width="1" />
+    <text x="230" y="15" fill="#e9d5ff" class="mono" font-size="10.5" font-weight="bold" text-anchor="middle">Next.js</text>
+
+    <rect x="278" y="0" width="102" height="22" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <text x="329" y="15" fill="#a7f3d0" class="mono" font-size="10.5" font-weight="bold" text-anchor="middle">Web Speech</text>
+  </g>
+
+  <rect x="26" y="184" width="320" height="8" rx="4" fill="#0f172a" />
+  <rect x="26" y="184" width="225" height="8" rx="4" fill="url(#amberGrad)" class="pulse-dot" />
+  <text x="26" y="208" fill="#fbbf24" class="mono" font-size="10.5" font-weight="bold">STATUS: IN PROGRESS • 3D SHADER &amp; VOICE R&amp;D</text>
+
+  <rect x="368" y="178" width="150" height="32" rx="8" fill="#be185d" stroke="#f472b6" stroke-width="1.2" />
+  <text x="443" y="198" fill="#ffffff" class="mono" font-size="11.5" font-weight="bold" text-anchor="middle">INSPECT REPO ↗</text>
+
+  <rect x="0" y="4" width="120" height="2.5" fill="#f472b6" class="shimmer" />
+</svg>
