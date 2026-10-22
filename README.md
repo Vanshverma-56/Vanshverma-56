@@ -18,6 +18,8 @@
 
 ```yaml
 Name        : Vansh Verma
+Education   : MBA Tech CE (3rd year)
+College     : NMIMS MPSTME
 Title       : Systems, Kernels & AI Architecture Engineer
 Focus Areas : Low-Level Micro-Kernels, Container Runtimes, Custom LLMs, Native Android
 Toolchain   : C, ARM64 Assembly, Go, Python, Kotlin, TypeScript, PyTorch, Linux
